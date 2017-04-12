@@ -23,3 +23,4 @@ dist/
 nbdist/
 .nb-gradle/
 /SpringCloudEureka.zip
+.DS_Store
