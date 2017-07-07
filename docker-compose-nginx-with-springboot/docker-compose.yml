@@ -1,0 +1,9 @@
+version: '2'
+  
+services:
+    nginx-lb:
+        image: nginx-lb
+    app1:
+        image: spring-boot-app1
+    app2:
+        image: spring-boot-app2
