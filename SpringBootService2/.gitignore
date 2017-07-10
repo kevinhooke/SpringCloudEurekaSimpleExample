@@ -22,11 +22,3 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
-/SpringCloudEureka.zip
-.DS_Store
-SpringBootService1/.mvn/
-SpringBootService1/mvn/
-SpringBootService1/mvn.cmd
-SpringBootService1/mvnw
-SpringBootService1/mvnw.cmd
-nginx-loadbalancer/conf/nginx copy-with vars.conf

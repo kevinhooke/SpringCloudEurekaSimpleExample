@@ -1,9 +1,22 @@
-version: '2'
+version: '3'
   
 services:
     nginx-lb:
-        image: nginx-lb
-    app1:
-        image: spring-boot-app1
-    app2:
-        image: spring-boot-app2
+        build: ../nginx-loadbalancer
+        #image: nginx-lb
+        ports:
+            - "80:80"
+        links:
+            - springbootservice1
+            - springbootservice2
+        depends_on:
+            - springbootservice1
+            - springbootservice2
+    springbootservice1:
+        image: springbootservice1
+        ports:
+            - "8080"
+    springbootservice2:
+        image: springbootservice2
+        ports:
+            - "8080"

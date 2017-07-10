@@ -10,7 +10,7 @@ public class Service1RestController {
 
 	@GetMapping(value = "example1", produces = "application/json")
 	public ExampleResponse example1(){
-		ExampleResponse response = new ExampleResponse("example 1");
+		ExampleResponse response = new ExampleResponse("hello from SpringBootService1");
 		
 		return response;
 	}
