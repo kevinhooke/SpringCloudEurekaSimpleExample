@@ -1,4 +1,4 @@
-package kh.springcloud.eureka.domain;
+package kh.springcloud.eureka.service1.domain;
 
 public class ExampleResponse {
 
