@@ -4,6 +4,9 @@ public class ZipResponse {
 
 	private boolean zipValid;
 
+	public ZipResponse(){
+	}
+	
 	public ZipResponse(boolean valid){
 		this.zipValid = valid;
 	}

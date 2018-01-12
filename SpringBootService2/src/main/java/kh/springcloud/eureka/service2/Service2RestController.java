@@ -26,7 +26,7 @@ public class Service2RestController {
 	}
 	
 	@GetMapping(value = "/zip/{zipcode}", produces = "application/json")
-	public ResponseEntity<ZipResponse> validateZip(@PathVariable String zipCode){
+	public ResponseEntity<ZipResponse> validateZip(@PathVariable("zipcode") String zipCode){
 		boolean result = validZips.contains(zipCode);
 	
 		return new ResponseEntity<ZipResponse>(new ZipResponse(result), HttpStatus.OK);
